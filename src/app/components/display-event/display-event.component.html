@@ -1,0 +1,54 @@
+<div class="event-container">
+  <div class="search-container">
+    <select [(ngModel)]="searchType" class="search-dropdown">
+      <option value="" disabled selected>Select Search Type</option>
+      <option value="name">Find by Name</option>
+      <option value="occasion">Find by Occasion</option>
+      <option value="location">Find by location</option>
+      <option value="date">Find by Date</option>
+    </select>
+  
+    <input *ngIf="searchType === 'name'" type="text" [(ngModel)]="eventName" placeholder="Enter name" class="find-input">
+    <input *ngIf="searchType === 'occasion'" type="text" [(ngModel)]="occasion" placeholder="Enter occasion" class="find-input">
+    <input *ngIf="searchType==='location'" type="text" [(ngModel)]="location" placeholder="Enter Location" class="find-input">
+    <input *ngIf="searchType==='date'" type="text" [(ngModel)]="date" placeholder="Enter Date" class="find-input">
+  
+    <button mat-raised-button color="btn btn-primary" (click)="onSearch()">Search</button>
+    <button mat-raised-button color="accent" (click)="sortByDate()">Sort by Date</button>
+  </div>
+  
+    <div style="display: flex; justify-content: center; align-items: center; height: auto;">
+      <table border="3px" class="table table-hover">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Occasion</th>
+            <th>Description</th>
+            <th>Location</th>
+            <th>No of guests attending</th>
+            <th>Date</th>
+            <th>Catering</th>
+            <th>Decorations</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let x of EventData">
+            <td>{{x.name}}</td>
+            <td>{{x.occasion}}</td>
+            <td>{{x.description}}</td>
+            <td>{{x.location}}</td>
+            <td>{{x.expectedGuests}}</td>
+            <td>{{x.date}}</td>
+            <td>{{x.catering}}</td>
+            <td>{{x.decorations}}</td>
+            <td>
+              <button type="submit" class="btn btn-primary" [routerLink]="['/update',x.id]" style="margin-right:10px;">Update</button>
+              <button type="button" class="btn btn-danger" (click)="deleteEvent(x.id)">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

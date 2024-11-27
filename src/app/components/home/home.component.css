@@ -1,0 +1,64 @@
+/* Hero Section */
+.hero {
+    background-image: url('/assets/images/img.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: rgb(201, 50, 196);
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(214, 111, 111, 0.5);
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    background-color: #ff5722;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button.secondary {
+    background-color: #00bcd4;
+  }
+  
+  .cta-button:hover {
+    background-color: #e64a19;
+  }
+  
+  
+ 
+  
+  

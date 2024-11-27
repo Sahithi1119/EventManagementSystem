@@ -1,0 +1,28 @@
+<div class="event-container">
+  <h2>Events in {{ location | uppercase }}</h2>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Occasion</th>
+        <th>Description</th>
+        <th>Location</th>
+        <th>Date</th>
+        <th>Expected Guests</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let event of events">
+        <td>{{ event.name }}</td>
+        <td>{{ event.occasion }}</td>
+        <td>{{ event.description }}</td>
+        <td>{{ event.location }}</td>
+        <td>{{event.date}}</td>
+        <td>{{ event.expectedGuests }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button mat-raised-button color="primary" cls="btn btn-secondary" routerLink="/display">Back to Events</button>
+</div>
+

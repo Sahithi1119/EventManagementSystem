@@ -1,0 +1,58 @@
+/* Center the container with padding */
+.event-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Card styling */
+.event-card {
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+/* Title and occasion styling */
+.event-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #333333;
+}
+
+.event-occasion {
+  font-size: 1.2em;
+  color: #555555;
+  margin-bottom: 15px;
+}
+
+/* Detail styling */
+.event-detail {
+  font-size: 1em;
+  margin: 8px 0;
+  color: #444444;
+}
+
+/* Actions section */
+.event-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button[mat-raised-button] {
+  font-weight: bold;
+  padding: 8px 20px;
+  background: #3f51b5;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button[mat-raised-button]:hover {
+  background-color: #2c387e;
+}

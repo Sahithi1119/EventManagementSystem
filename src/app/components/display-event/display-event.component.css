@@ -1,0 +1,107 @@
+/* event-details.component.css */
+
+.event-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  height: 100vh; /* full height */
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.find-event {
+  display: flex;
+  justify-content: flex-end; /* Aligns to the right */
+  width: 100%;
+  margin-bottom: 20px; /* Space between search and table */
+}
+
+.find-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px; /* Space between input and button */
+  transition: border-color 0.3s;
+}
+
+.find-input:focus {
+  border-color: #007bff; /* Highlight border on focus */
+  outline: none; /* Remove default outline */
+}
+
+button[mat-raised-button]
+{
+  padding: 10px; /* Button color */
+  border-radius: 5px; /* Rounded corners */
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button[mat-raised-button]:hover {
+  outline: none;
+  border :3px;
+}
+
+.btn-primary {
+  font-weight: bold;
+  padding: 10px 10px;
+  background: #007bff; /* Button color */
+  color: white;
+  transition: background-color 0.3s ease;
+  border-radius: 5px; /* Rounded corners */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.table {
+  width: 100%; /* Full width of the container */
+  border-collapse: collapse; /* Merge borders */
+  margin-top: 10px; /* Space above table */
+}
+
+.table th, .table td {
+  padding: 10px; /* Space within cells */
+  text-align: left; /* Left align text */
+}
+
+.table th {
+  background-color: #007bff; /* Header background */
+  color: white; /* Header text color */
+}
+
+.table-hover tr:hover {
+  background-color: #f1f1f1; /* Highlight on hover */
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Danger button color */
+  color: white;
+  margin-top: 5px; /* Text color for danger button */
+}
+
+.btn-danger:hover {
+  background-color: #c82333; /* Darker shade on hover */
+}
+
+.search-dropdown
+{
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px; /* Space between input and button */
+  transition: border-color 0.3s;
+}
+.btn-search {
+  background-color: #007bff; /* Primary color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding for button */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}

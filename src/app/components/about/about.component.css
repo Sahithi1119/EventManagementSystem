@@ -1,0 +1,46 @@
+
+body, html {
+  height: 100%; /* Ensure the body takes full height */
+  margin: 10px; /* Remove default margin */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9; /* Light background */
+}
+
+.centertext {
+  text-align: center;
+  max-width: 800px; /* Limit the width of the text block */
+  padding: 20px;
+  background-color: #ffffff; /* White background for the container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: 1px solid #ccc; /* Light border around the text */
+  transition: transform 0.3s ease-in-out;
+}
+
+.centertext p {
+  font-size: 20px; /* Text size */
+  font-weight: bold;
+  line-height: 1.7;
+  color: #333; /* Dark text for good readability */
+}
+
+.centertext:hover {
+  transform: scale(1.05); /* Slight zoom effect when hovered */
+}
+
+.centertext p {
+  font-style: italic; 
+  font-weight: 400;
+}
+
+@media (max-width: 600px) {
+  .centeretext {
+    padding: 15px;
+  }
+  .centeretext p {
+    font-size: 16px;
+  }
+}

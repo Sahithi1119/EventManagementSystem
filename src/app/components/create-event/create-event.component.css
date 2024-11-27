@@ -1,0 +1,81 @@
+.container
+{
+    max-width: 600px; 
+    margin: 20px auto;
+    padding: 20px; 
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+.form-label{
+    font-weight: bold;
+    color:#333;
+}
+
+.form-control
+{
+    border-radius:5px;
+    border:1px solid #ced4da;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus{
+    border-color: #007bff; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);  
+}
+
+.form-check-label
+{
+    margin-left: 10px;
+}
+
+.form-check-input
+{
+    margin-right: 5px;
+}
+
+.btn-custom
+{
+    background-color: #007bff;
+    color:white;
+    border:none;
+    border-radius: 5px;
+    padding:10px 20px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.btn-custom:hover{
+    background-color: #0056b3;
+}
+
+
+
+/* Radio Buttons */
+.form-check {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+
+.form-check-label {
+    font-size: 13px;
+    color: #555;
+}
+.text-center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        margin: 15px;
+    }
+
+    .btn-custom {
+        width: 100%;
+    }
+}

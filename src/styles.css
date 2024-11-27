@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #353535;
+}
+
+header
+{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+header div span
+{
+    display: block;
+    text-align: center;
+}
+
+.logo2
+{
+    font-size:50px;
+    font-weight: bold;
+    margin-left:-5px;
+
+}
+
+.logo3
+{
+    letter-spacing: 20px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

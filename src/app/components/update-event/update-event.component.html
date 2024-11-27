@@ -1,0 +1,50 @@
+
+<div class="container">
+    <h1>Update Form</h1>
+    <form [formGroup]="updateForm" (ngSubmit)="updateEvent()">
+        <div>
+            <label class="form-label">Name:</label>
+            <input type="text" class="form-control" formControlName="name">
+        </div>
+        <div>
+            <label class="form-label">Occasion:</label>
+            <input type="text" class="form-control" formControlName="occasion">
+        </div>
+        <div>
+            <label class="form-label">Description:</label>
+            <input type="text" class="form-control" formControlName="description">
+        </div>
+        <div>
+            <label class="form-label">Date:</label>
+            <input type="date" class="form-control" formControlName="date">
+        </div>
+        <div>
+            <label class="form-label">Time:</label>
+            <input type="time" class="form-control" formControlName="time">
+        </div>
+        <div>
+            <label class="form-label">Location:</label>
+            <input type="location" class="form-control" formControlName="location">
+        </div>
+        <div>
+            <label class="form-label">No of guests attending</label>
+            <input type="number" class="form-control" formControlName="expectedGuests">
+        </div>
+        <div>
+            <label class="form-label">Catering Required:</label>
+            <select  class="form-control" formControlName="catering">
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+        </div>
+        <div>
+            <label class="form-label">Decorations Required:</label>
+            <select  class="form-control" formControlName="decorations">
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-info" >Update Event</button>
+    </form>
+</div>
